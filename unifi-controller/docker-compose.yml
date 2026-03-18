@@ -9,7 +9,7 @@ services:
       - MEM_LIMIT=1024 #optional
       - MEM_STARTUP=1024 #optional
     volumes:
-      - /path/to/data:/config
+      - unifi_config:/config
     ports:
       - 8072:8443
       - 3478:3478/udp
@@ -21,3 +21,6 @@ services:
       - 6789:6789 #optional
       - 5514:5514/udp #optional
     restart: unless-stopped
+
+volumes:
+  unifi_config:
