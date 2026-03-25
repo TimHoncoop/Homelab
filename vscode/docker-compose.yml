@@ -1,0 +1,18 @@
+services:
+  code-server:
+    image: lscr.io/linuxserver/code-server:latest
+    container_name: code-server
+    environment:
+      - TZ=Europe/Amsterdam
+      - PASSWORD=${PASSWORD}
+    volumes:
+      - data:/config/data/config
+    ports:
+      - 8443:8443
+    restart: unless-stopped
+
+volumes:
+  data:
+  homepage_config:
+    external: true
+    name: homepage_homepage_config
