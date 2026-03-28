@@ -9,7 +9,7 @@ services:
       #- DOCKER_MODS=linuxserver/mods:universal-calibre #optional
       #- OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
     volumes:
-      - calibe_config:/config
+      - calibre_config:/config
       - nas_books:/books
     ports:
       - 8083:8083
@@ -24,7 +24,7 @@ services:
       #- DOCKER_MODS=linuxserver/mods:universal-calibre #optional
       #- OAUTHLIB_RELAX_TOKEN_SCOPE=1 #optional
     volumes:
-      - calibe_config:/config
+      - calibre_web_config:/config
       - nas_books:/books
     ports:
       - 8087:8080
@@ -36,3 +36,4 @@ volumes:
     external: true
     name: nas_books
   calibe_config:
+  calibre_web_config:
