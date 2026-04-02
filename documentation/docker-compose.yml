@@ -7,7 +7,7 @@ services:
       DATABASE_URL: '${DOCMOST_DB_URL}'
       REDIS_URL: '${DOCMOST_REDIS_URL}'
     ports:
-      - "3000:3000"
+      - "8075:3000"
     restart: unless-stopped
     volumes:
       - docmost_data:/app/data/storage
