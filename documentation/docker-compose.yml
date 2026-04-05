@@ -13,8 +13,6 @@ services:
     volumes:
       - docmost_data:/app/data/storage
   planka:
-	# Options
-	# https://github.com/plankanban/planka/blob/master/docker-compose.yml
     container_name: planka
     image: ghcr.io/plankanban/planka:latest
     environment:
