@@ -19,6 +19,9 @@ services:
       BASE_URL: 'http://localhost:3000'
       DATABASE_URL: '${PLANKA_DB_URL}'
       SECRET_KEY: '${PLANKA_APP_SECRET}'
+      DEFAULT_ADMIN_USERNAME: admin
+      DEFAULT_ADMIN_EMAIL: '{PLANKA_ADMIN_EMAIL}'
+      DEFAULT_ADMIN_PASSWORD: '${PLANKA_ADMIN_PASSWORD}'
     ports:
       - 8076:1337
     restart: unless-stopped
