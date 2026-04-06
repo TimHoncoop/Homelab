@@ -22,6 +22,7 @@ services:
       DEFAULT_ADMIN_USERNAME: admin
       DEFAULT_ADMIN_EMAIL: '{PLANKA_ADMIN_EMAIL}'
       DEFAULT_ADMIN_PASSWORD: '${PLANKA_ADMIN_PASSWORD}'
+      DEFAULT_ADMIN_NAME: 'admin'
     ports:
       - 8076:1337
     restart: unless-stopped
