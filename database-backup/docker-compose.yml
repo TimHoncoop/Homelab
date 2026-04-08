@@ -5,5 +5,8 @@ services:
     ports:
       - "4005:4005"
     volumes:
-      - ./databasus-data:/databasus-data
+      - databasus-data:/databasus-data
     restart: unless-stopped
+
+volumes:
+  databasus-data:
